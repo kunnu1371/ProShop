@@ -1,4 +1,4 @@
- # MERN Stack gadget e-commerce Webstie:
+ # ProShop - A MERN Stack gadget e-commerce website:
 
 ## Technologies
 #### Frontend - HTML, CSS, React.js, React Bootstrap, Redux
