@@ -1,6 +1,6 @@
  # MERN Stack gadget e-commerce Webstie:
 
-## Technolgies
+## Technologies
 #### Frontend - HTML, CSS, React.js, React Bootstrap, Redux
 #### Backend - Node.js, Express.js
 #### Database - MongoDB
@@ -48,7 +48,7 @@
             <li>Add Products</li>
             <li>Remove Products</li>
             <li>See Cart Products</li>
-            <li>Product's quantity Increment/Decrement</li>
+            <li>Update Product's quantity</li>
         </ul>
     <li>Order</li>
         <ul>
