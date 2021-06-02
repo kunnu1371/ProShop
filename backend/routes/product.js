@@ -5,11 +5,11 @@ import Product from "../model/productModel.js";
 
 router.get(
   "/",
-  asyncHandler(async (req, res) => {
+  async (req, res) => {
     const products = await Product.find({});
     res.json(products);
-  })
-);
+  }
+); 
 
 router.get(
   "/:id",
