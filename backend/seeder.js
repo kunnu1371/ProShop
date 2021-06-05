@@ -3,8 +3,8 @@ import dotenv from "dotenv";
 import users from "./data/users.js";
 import products from "./data/products.js";
 import User from "./model/userModel.js";
-import Product from "./model/productModel.js";
-import Order from "./model/orderModel.js";
+import Product from "./model/product.js";
+import Order from "./model/order.js";
 import connection from "./config/db.js";
 
 dotenv.config();
