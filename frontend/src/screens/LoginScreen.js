@@ -5,7 +5,7 @@ import { useDispatch, useSelector } from "react-redux";
 import Loader from "../components/Loader";
 import Message from "../components/Message";
 import FormContainer from "../components/FormContainer";
-import { login } from "../actions/userAction";
+import { login } from "../actions/userActions.js";
 
 const LoginScreen = ({ location, history }) => {
   const [email, setEmail] = useState("");
@@ -56,7 +56,7 @@ const LoginScreen = ({ location, history }) => {
           ></Form.Control>
         </Form.Group>
 
-        <Button type="submit" vairant="primary">
+        <Button type="submit" variant="primary">
           Sign In
         </Button>
       </Form>

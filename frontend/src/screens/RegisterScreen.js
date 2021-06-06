@@ -5,7 +5,7 @@ import { useDispatch, useSelector } from "react-redux";
 import Loader from "../components/Loader";
 import Message from "../components/Message";
 import FormContainer from "../components/FormContainer";
-import { login, register } from "../actions/userAction";
+import { register } from "../actions/userActions.js";
 
 const RegisterScreen = ({ location, history }) => {
   const [name, setName] = useState("");
@@ -84,7 +84,7 @@ const RegisterScreen = ({ location, history }) => {
           ></Form.Control>
         </Form.Group>
 
-        <Button type="submit" vairant="primary">
+        <Button type="submit" variant="primary">
           Register
         </Button>
       </Form>
