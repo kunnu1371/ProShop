@@ -30,6 +30,13 @@ const LoginScreen = ({ location, history }) => {
     dispatch(login(email, password));
   };
 
+  const [passwordShown, setPasswordShown] = useState(false);
+  const [icon, setIcon] = useState("fas fa-eye");
+  const togglePasswordVisiblity = () => {
+    setPasswordShown(passwordShown ? false : true);
+    setIcon(icon === "fas fa-eye" ? "fas fa-eye-slash" : "fas fa-eye");
+  };
+
   return (
     <FormContainer>
       <h1>Sign In</h1>
@@ -45,15 +52,23 @@ const LoginScreen = ({ location, history }) => {
             onChange={(e) => setEmail(e.target.value)}
           ></Form.Control>
         </Form.Group>
-        
+
         <Form.Group controlId="password">
           <Form.Label>Password</Form.Label>
           <Form.Control
-            type="password"
+            type={passwordShown ? "text" : "password"}
             placeholder="Enter password"
             value={password}
             onChange={(e) => setPassword(e.target.value)}
           ></Form.Control>
+          <span>
+            <i
+              class={icon}
+              aria-hidden="true"
+              id="eye"
+              onClick={togglePasswordVisiblity}
+            ></i>
+          </span>
         </Form.Group>
 
         <Button type="submit" variant="primary">

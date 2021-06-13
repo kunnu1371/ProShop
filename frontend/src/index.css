@@ -38,8 +38,28 @@ h2 {
   }
 }
 
+span #eye {
+  position: absolute;
+  padding: 0.4em 0.5em !important;
+  right: 20px;
+  transform: translate(0, -50%);
+  top: 50%;
+  margin-top: 40px;
+  font-size: large;
+  cursor: pointer !important;
+}
+
 @media only screen and (max-width: 376px) {
   .fade.alert.alert-success.show {
     font-size: small;
+  }
+  span #eye {
+    margin-top: 32px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  span #eye {
+    margin-top: 32px;
   }
 }

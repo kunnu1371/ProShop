@@ -133,14 +133,14 @@ const ProfileScreen = ({ location, history }) => {
                     {order.isPaid ? (
                       order.paidAt.substring(0, 10)
                     ) : (
-                      <i className="fas fa-times" style={{ color: "red", fontSize: 'large', marginLeft: '2rem'}}></i>
+                      <i className="fas fa-times" style={{ color: "red",marginLeft: '2rem'}}></i>
                     )}
                   </td>
                   <td>
                     {order.isDelivered ? (
                       order.deliveredAt.substring(0, 10)
                     ) : (
-                      <i className="fas fa-times" style={{ color: "red", fontSize: 'large', marginLeft: '2rem'}}></i>
+                      <i className="fas fa-times" style={{ color: "red", marginLeft: '2rem'}}></i>
                     )}
                   </td>
                   <td>
