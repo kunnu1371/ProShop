@@ -40,7 +40,7 @@ h2 {
 
 span #eye {
   position: absolute;
-  padding: 0.4em 0.5em !important;
+  padding: 0.4em 0.9em !important;
   right: 20px;
   transform: translate(0, -50%);
   top: 50%;
