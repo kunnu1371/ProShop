@@ -36,7 +36,7 @@ const CartScreen = ({ match, location, history }) => {
   const checkoutHandler = () => {
     history.push("/login?redirect=shipping");
   };
-
+  
   return (
     <Row>
       <Col md={8}>

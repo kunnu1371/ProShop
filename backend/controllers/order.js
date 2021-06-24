@@ -1,5 +1,6 @@
 import asyncHandler from "express-async-handler";
 import Order from "../model/order.js";
+import { orderConfirm, paymentConfirm } from "../utils/sendMail.js";
 
 const addOrderItems = asyncHandler(async (req, res) => {
   const {
@@ -28,7 +29,7 @@ const addOrderItems = asyncHandler(async (req, res) => {
     });
 
     const createdOrder = await order.save();
-
+    orderConfirm(createdOrder);
     res.status(201).json(createdOrder);
   }
 });
@@ -61,6 +62,7 @@ const updateOrderToPaid = asyncHandler(async (req, res) => {
     };
 
     const updateOrder = await order.save();
+    paymentConfirm(updateOrder);
     res.json(updateOrder);
   } else {
     res.status(404);
@@ -69,8 +71,19 @@ const updateOrderToPaid = asyncHandler(async (req, res) => {
 });
 
 const getMyOrders = asyncHandler(async (req, res) => {
-  const orders = await Order.find({ user: req.user._id }); 
+  const orders = await Order.find({ user: req.user._id });
   res.json(orders);
 });
 
-export { addOrderItems, getOrderById, updateOrderToPaid, getMyOrders };
+const getOrders = asyncHandler(async (req, res) => {
+  const orders = await Order.find({}).populate("user", "id name");
+  res.json(orders);
+});
+
+export {
+  addOrderItems,
+  getOrderById,
+  updateOrderToPaid,
+  getMyOrders,
+  getOrders,
+};

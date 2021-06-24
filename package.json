@@ -23,6 +23,7 @@
   },
   "homepage": "https://github.com/Kunnu1371/ProShop#readme",
   "dependencies": {
+    "@sendgrid/mail": "^7.4.5",
     "bcryptjs": "^2.4.3",
     "colors": "^1.4.0",
     "concurrently": "^5.3.0",
