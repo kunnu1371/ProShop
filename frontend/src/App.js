@@ -20,7 +20,7 @@ import ProductListScreen from "./screens/ProductListScreen.js";
 import UserEditScreen from "./screens/UserEditScreen.js";
 import ProductEditScreen from "./screens/ProductEditScreen.js";
 
-function App() {
+const App = () => {
   return (
     <Router>
       <Header />
