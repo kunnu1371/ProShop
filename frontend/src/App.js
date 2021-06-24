@@ -1,5 +1,5 @@
 // import React from "react";
-// import { BrowserRouter as Router, Route } from "react-router-dom";
+import { BrowserRouter as Router, Route } from "react-router-dom";
 // import Header from "./components/Header.js";
 // import Footer from "./components/Footer.js";
 // import { Container } from "react-bootstrap";
@@ -53,10 +53,10 @@ import HomeScreen from "./screens/HomeScreen.js";
  
  const App = () => {
    return (
-     <div>
+     <Router>
        <h1>Hello World</h1>
       <Route path="/" component={HomeScreen} exact />
-     </div>
+     </Router>
    )
  }
  
