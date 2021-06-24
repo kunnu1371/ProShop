@@ -17,7 +17,7 @@ import {
   PRODUCT_CREATE_REVIEW_REQUEST,
   PRODUCT_CREATE_REVIEW_SUCCESS,
   PRODUCT_CREATE_REVIEW_FAIL,
-} from "../constants/productConstants";
+} from "../constants/productConstants.js";
 import axios from "axios";
 
 export const listProducts = () => async (dispatch) => {

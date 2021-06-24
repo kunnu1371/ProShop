@@ -1,24 +1,24 @@
 import React from "react";
 import { BrowserRouter as Router, Route } from "react-router-dom";
-import Header from "./components/Header";
-import Footer from "./components/Footer";
+import Header from "./components/Header.js";
+import Footer from "./components/Footer.js";
 import { Container } from "react-bootstrap";
 import "./index.css";
-import HomeScreen from "./screens/HomeScreen";
-import ProductScreen from "./screens/ProductScreen";
-import CartScreen from "./screens/CartScreen";
-import LoginScreen from "./screens/LoginScreen";
-import RegisterScreen from "./screens/RegisterScreen";
-import ProfileScreen from "./screens/ProfileScreen";
-import ShippingScreen from "./screens/ShippingScreen";
-import PaymentScreen from "./screens/PaymentScreen";
-import PlaceOrderScreen from "./screens/PlaceOrderScreen";
-import OrderScreen from "./screens/OrderScreen";
-import UserListScreen from "./screens/UserListScreen";
-import OrderListScreen from "./screens/OrderListScreen";
-import ProductListScreen from "./screens/ProductListScreen";
-import UserEditScreen from "./screens/UserEditScreen";
-import ProductEditScreen from "./screens/ProductEditScreen";
+import HomeScreen from "./screens/HomeScreen.js";
+import ProductScreen from "./screens/ProductScreen.js";
+import CartScreen from "./screens/CartScreen.js";
+import LoginScreen from "./screens/LoginScreen.js";
+import RegisterScreen from "./screens/RegisterScreen.js";
+import ProfileScreen from "./screens/ProfileScreen.js";
+import ShippingScreen from "./screens/ShippingScreen.js";
+import PaymentScreen from "./screens/PaymentScreen.js";
+import PlaceOrderScreen from "./screens/PlaceOrderScreen.js";
+import OrderScreen from "./screens/OrderScreen.js";
+import UserListScreen from "./screens/UserListScreen.js";
+import OrderListScreen from "./screens/OrderListScreen.js";
+import ProductListScreen from "./screens/ProductListScreen.js";
+import UserEditScreen from "./screens/UserEditScreen.js";
+import ProductEditScreen from "./screens/ProductEditScreen.js";
 
 function App() {
   return (

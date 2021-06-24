@@ -23,9 +23,9 @@ import {
   USER_UPDATE_REQUEST,
   USER_UPDATE_SUCCESS,
   USER_UPDATE_FAIL,
-} from "../constants/userConstants";
+} from "../constants/userConstants.js";
 import axios from "axios";
-import { ORDER_LIST_RESET } from "../constants/orderContants";
+import { ORDER_LIST_RESET } from "../constants/orderContants.js";
 
 export const login = (email, password) => async (dispatch) => {
   try {
