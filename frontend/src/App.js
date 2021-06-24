@@ -19,7 +19,7 @@ import UserEditScreen from "./screens/UserEditScreen.js";
 import ProductEditScreen from "./screens/ProductEditScreen.js";
 // import TestHeader from './components/Header.js'
 import Header from './components/TestHeader.js'
-// import Header from "./components/Header.js";
+import Footer from "./components/TestFooter.js";
 
 const App = () => {
   return (
@@ -44,7 +44,7 @@ const App = () => {
           <Route path="/admin/product/:id/edit" component={ProductEditScreen} />
         </Container>
       </main>
-      {/* <Footer /> */}
+      <Footer />
     </Router>
   );
 }
