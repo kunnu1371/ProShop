@@ -2,9 +2,9 @@ import React, { useEffect } from "react";
 import { Button, Table } from "react-bootstrap";
 import { LinkContainer } from "react-router-bootstrap";
 import { useDispatch, useSelector } from "react-redux";
-import Loader from "../components/Loader";
-import Message from "../components/Message";
-import { adminListOrders } from "../actions/orderActions";
+import Loader from "../components/Loader.js";
+import Message from "../components/Message.js";
+import { adminListOrders } from "../actions/orderActions.js";
 
 const OrderListScreen = ({ history }) => {
   const dispatch = useDispatch();

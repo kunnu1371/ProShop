@@ -1,12 +1,12 @@
 import React, { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import CheckoutSteps from "../components/CheckoutSteps";
-import Message from "../components/Message";
+import Message from "../components/Message.js";
 import { Button, Row, Col, ListGroup, Image, Card } from "react-bootstrap";
 import { Link } from "react-router-dom";
-import { createOrder } from "../actions/orderActions";
-import { ORDER_CREATE_RESET } from '../constants/orderContants'
-import { USER_DETAILS_RESET } from '../constants/userConstants'
+import { createOrder } from "../actions/orderActions.js";
+import { ORDER_CREATE_RESET } from '../constants/orderContants.js'
+import { USER_DETAILS_RESET } from '../constants/userConstants.js'
 
 const PlaceOrderScreen = ({ history }) => {
   const dispatch = useDispatch();

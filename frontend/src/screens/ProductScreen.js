@@ -1,15 +1,15 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { Row, Col, Image, ListGroup, Button, Form } from "react-bootstrap";
-import Rating from "../components/Rating";
+import Rating from "../components/Rating.js";
 import { useDispatch, useSelector } from "react-redux";
 import {
   listProductDetails,
   createProductReview,
 } from "../actions/productActions.js";
-import Loader from "../components/Loader";
-import Message from "../components/Message";
-import { PRODUCT_CREATE_REVIEW_RESET } from "../constants/productConstants";
+import Loader from "../components/Loader.js";
+import Message from "../components/Message.js";
+import { PRODUCT_CREATE_REVIEW_RESET } from "../constants/productConstants.js";
 
 const ProductScreen = ({ history, match }) => {
   const [qty, setQty] = useState(1);

@@ -2,10 +2,10 @@ import React, { useState, useEffect } from "react";
 import { Table, Form, Button, Row, Col } from "react-bootstrap";
 import { LinkContainer } from "react-router-bootstrap";
 import { useDispatch, useSelector } from "react-redux";
-import Loader from "../components/Loader";
-import Message from "../components/Message";
+import Loader from "../components/Loader.js";
+import Message from "../components/Message.js";
 import { getUserDetails, updateUserProfile } from "../actions/userActions.js";
-import { listMyOrders } from "../actions/orderActions";
+import { listMyOrders } from "../actions/orderActions.js";
 // import { USER_UPDATE_PROFILE_RESET } from "../constants/userConstants";
 
 const ProfileScreen = ({ location, history }) => {

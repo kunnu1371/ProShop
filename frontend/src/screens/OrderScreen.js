@@ -1,11 +1,11 @@
 import React, { useState, useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import Loader from "../components/Loader";
-import Message from "../components/Message";
+import Loader from "../components/Loader.js";
+import Message from "../components/Message.js";
 import { Button, Row, Col, ListGroup, Image, Card } from "react-bootstrap";
 import { Link } from "react-router-dom";
-import { getOrderDetails, payOrder, deliverOrder } from "../actions/orderActions";
-import { ORDER_PAY_RESET, ORDER_DELIVER_RESET } from "../constants/orderContants";
+import { getOrderDetails, payOrder, deliverOrder } from "../actions/orderActions.js";
+import { ORDER_PAY_RESET, ORDER_DELIVER_RESET } from "../constants/orderContants.js";
 import axios from "axios";
 import { PayPalButton } from "react-paypal-button-v2";
 

@@ -3,11 +3,11 @@ import React, { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import { Form, Button } from 'react-bootstrap'
 import { useDispatch, useSelector } from 'react-redux'
-import Message from '../components/Message'
-import Loader from '../components/Loader'
-import FormContainer from '../components/FormContainer'
-import { listProductDetails, updateProduct } from '../actions/productActions'
-import { PRODUCT_UPDATE_RESET } from '../constants/productConstants'
+import Message from '../components/Message.js'
+import Loader from '../components/Loader.js'
+import FormContainer from '../components/FormContainer.js'
+import { listProductDetails, updateProduct } from '../actions/productActions.js'
+import { PRODUCT_UPDATE_RESET } from '../constants/productConstants.js'
 
 const ProductEditScreen = ({ match, history }) => {
   const productId = match.params.id

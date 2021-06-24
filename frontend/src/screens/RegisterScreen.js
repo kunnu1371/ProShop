@@ -2,9 +2,9 @@ import React, { useState, useEffect } from "react";
 import { Form, Button, Row, Col } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
-import Loader from "../components/Loader";
-import Message from "../components/Message";
-import FormContainer from "../components/FormContainer";
+import Loader from "../components/Loader.js";
+import Message from "../components/Message.js";
+import FormContainer from "../components/FormContainer.js";
 import { register } from "../actions/userActions.js";
 
 const RegisterScreen = ({ location, history }) => {

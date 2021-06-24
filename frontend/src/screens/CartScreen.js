@@ -10,8 +10,8 @@ import {
   Button,
   Card,
 } from "react-bootstrap";
-import Message from "../components/Message";
-import { addToCart, removeFromCart } from "../actions/cartActions";
+import Message from "../components/Message.js";
+import { addToCart, removeFromCart } from "../actions/cartActions.js";
 
 const CartScreen = ({ match, location, history }) => {
   const productId = match.params.id;

@@ -4,7 +4,7 @@
 // import Footer from "./components/Footer.js";
 // import { Container } from "react-bootstrap";
 // import "./index.css";
-// import HomeScreen from "./screens/HomeScreen.js";
+import HomeScreen from "./screens/HomeScreen.js";
 // import ProductScreen from "./screens/ProductScreen.js";
 // import CartScreen from "./screens/CartScreen.js";
 // import LoginScreen from "./screens/LoginScreen.js";
@@ -40,7 +40,7 @@
 //           <Route path="/admin/user/:id/edit" component={UserEditScreen} />
 //           <Route path="/admin/orderlist" component={OrderListScreen} />
 //           <Route path="/admin/productlist" component={ProductListScreen} />
-//           <Route path="/admin/product/:id/edit" component={ProductEditScreen} />
+          // <Route path="/admin/product/:id/edit" component={ProductEditScreen} />
 //         </Container>
 //       </main>
 //       <Footer />
@@ -54,7 +54,8 @@
  const App = () => {
    return (
      <div>
-       Hello World
+       <h1>Hello World</h1>
+      <Route path="/" component={HomeScreen} exact />
      </div>
    )
  }
