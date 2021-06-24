@@ -43,7 +43,7 @@ const orderConfirm = async(order) => {
   sgMail
     .send(msg)
     .then(() => {
-      console.log("Email sent");
+      console.log("Order Confirmation Email sent");
     })
     .catch((error) => {
       console.error(error);
@@ -68,7 +68,7 @@ const paymentConfirm = async(updateOrder) => {
   sgMail
     .send(msg)
     .then(() => {
-      console.log("Email sent");
+      console.log("Payment Confirmation Email sent");
     })
     .catch((error) => {
       console.error(error);
