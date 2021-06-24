@@ -26,7 +26,6 @@ const App = () => {
     <Router>
       <TestComponent />
       {/* <Header /> */}
-      <TestScreen />
       <main className="py-3">
         <Container>
           <Route path="/" component={HomeScreen} exact />
