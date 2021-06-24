@@ -19,11 +19,15 @@ import OrderListScreen from "./screens/OrderListScreen.js";
 import ProductListScreen from "./screens/ProductListScreen.js";
 import UserEditScreen from "./screens/UserEditScreen.js";
 import ProductEditScreen from "./screens/ProductEditScreen.js";
+import TestComponent from './components/Test.js'
+import TestScreen from './components/Test.js'
 
 const App = () => {
   return (
     <Router>
-      <Header />
+      {/* <Header /> */}
+      <TestComponent />
+      <TestScreen />
       <main className="py-3">
         <Container>
           <Route path="/" component={HomeScreen} exact />
