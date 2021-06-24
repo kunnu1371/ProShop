@@ -18,13 +18,13 @@ import OrderListScreen from "./screens/OrderListScreen.js";
 import ProductListScreen from "./screens/ProductListScreen.js";
 import UserEditScreen from "./screens/UserEditScreen.js";
 import ProductEditScreen from "./screens/ProductEditScreen.js";
-import Header from './components/Header.js'
+import TestHeader from './components/Header.js'
 // import Header from "./components/Header.js";
 
 const App = () => {
   return (
     <Router>
-      <Header />
+      <TestHeader />
       {/* <Header /> */}
       <main className="py-3">
         <Container>
