@@ -5,7 +5,7 @@ sgMail.setApiKey(process.env.SENDGRID_API_KEY);
 import User from "../model/user.js";
 
 const orderConfirm = async(order) => {
-  console.log(order)
+  // console.log(order)
   const user = await User.findById(order.user)
   let body = `<center>
               <h1>Order Confirmation</h1>
@@ -52,16 +52,25 @@ const orderConfirm = async(order) => {
 
 
 const paymentConfirm = async(updateOrder) => {
-  console.log(updateOrder)
+  // console.log(updateOrder)
   const user = await User.findById(updateOrder.user)
   let body = `<center>
               <h1>Payment Confirmation</h1>
-              <p>Hi ${user.name}. Thank you, Your payment was successful. Happy Shopping!<p> 
+              <p>Hi ${user.name}. Thank you, We've received your payment for the following order<br> <strong> Order ID: ${updateOrder._id}<strong>
+              </center>
+              <h3>Payment Details</h3>
+              <hr/>
+              Payment ID: ${updateOrder.paymentResult.id}<br>
+              Status: ${updateOrder.paymentResult.status}<br>
+              Paid On: ${updateOrder.paymentResult.update_time.substring(0, 10)}
+              <center><br><br>
+              Happy Shopping with <a href='#'>ProShop</a>!
+              <center> 
               `
   const msg = {
     to: "kunalgautam13711@gmail.com",
     from: "kunalgautam1371@gmail.com",
-    subject: "Your order is placed successfully",
+    subject: "Your payment is successfull",
     text: "and easy to do anywhere, even with Node.js",
     html: body,
   };
