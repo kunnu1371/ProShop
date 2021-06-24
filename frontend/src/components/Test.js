@@ -4,7 +4,7 @@ import { LinkContainer } from "react-router-bootstrap";
 import { Container, Navbar, Nav, NavDropdown } from "react-bootstrap";
 import { logout } from "../actions/userActions.js";
 
-const TestComponent = () => {
+const Header = () => {
   const dispatch = useDispatch();
 
   const userLogin = useSelector((state) => state.userLogin);
@@ -44,7 +44,7 @@ const TestComponent = () => {
                 </LinkContainer>
               )}
               {userInfo && userInfo.isAdmin && (
-                <NavDropdown title='Admin' id="adminmenu">
+                <NavDropdown title="Admin" id="adminmenu">
                   <LinkContainer to="/admin/userlist">
                     <NavDropdown.Item>Users</NavDropdown.Item>
                   </LinkContainer>
@@ -62,6 +62,6 @@ const TestComponent = () => {
       </Navbar>
     </header>
   );
-}
+};
 
-export default TestComponent;
+export default Header;
