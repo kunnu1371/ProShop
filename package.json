@@ -10,7 +10,9 @@
     "client": "npm start --prefix frontend",
     "dev": "concurrently \"npm run server\" \"npm run client\"",
     "data:import": "node backend/seeder",
-    "data:destroy": "node backend/seeder -d"
+    "data:destroy": "node backend/seeder -d",
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix frontend && npm run build --prefix frontend"
+
   },
   "repository": {
     "type": "git",
@@ -36,9 +38,5 @@
     "morgan": "^1.10.0",
     "multer": "^1.4.2",
     "nodemon": "^2.0.7"
-  },
-  "engines": {
-    "node": "14.3.0",
-    "npm": "6.14.5"
   }
 }
