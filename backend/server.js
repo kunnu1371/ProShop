@@ -13,20 +13,22 @@ import { notFound, errorHandler } from "./middleware/errorMiddleware.js";
 dotenv.config();
 connection();
 
-const app = express();
+const app = express()
 
-if (process.env.NODE_ENV === "development") {
-  app.use(morgan("dev"));
+if (process.env.NODE_ENV === 'development') {
+  app.use(morgan('dev'))
 }
-app.use(express.json());
-app.use("/api/products", productRoutes);
-app.use("/api/users", userRoutes);
-app.use("/api/orders", orderRoutes);
-app.use("/api/upload", uploadRoutes);
 
-app.get("/api/config/paypal", (req, res) => {
-  res.json(process.env.PAYPAL_CLIENT_ID);
-});
+app.use(express.json())
+
+app.use('/api/products', productRoutes)
+app.use('/api/users', userRoutes)
+app.use('/api/orders', orderRoutes)
+app.use('/api/upload', uploadRoutes)
+
+app.get('/api/config/paypal', (req, res) =>
+  res.send(process.env.PAYPAL_CLIENT_ID)
+)
 
 const __dirname = path.resolve()
 app.use('/uploads', express.static(path.join(__dirname, '/uploads')))
@@ -43,12 +45,14 @@ if (process.env.NODE_ENV === 'production') {
   })
 }
 
-app.use(notFound);
-app.use(errorHandler);
+app.use(notFound)
+app.use(errorHandler)
 
-const port = process.env.PORT || 5000;
-app.listen(port, () =>
+const PORT = process.env.PORT || 5000
+
+app.listen(
+  PORT,
   console.log(
-    `Server running in ${process.env.NODE_ENV} mode on port ${port}`.yellow.bold
+    `Server running in ${process.env.NODE_ENV} mode on port ${PORT}`.yellow.bold
   )
-);
+)
