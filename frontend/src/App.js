@@ -1,6 +1,5 @@
 import React from "react";
 import { BrowserRouter as Router, Route } from "react-router-dom";
-// import Header from "./components/Header.js";
 // import Footer from "./components/Footer.js";
 import { Container } from "react-bootstrap";
 import "./index.css";
@@ -20,13 +19,13 @@ import ProductListScreen from "./screens/ProductListScreen.js";
 import UserEditScreen from "./screens/UserEditScreen.js";
 import ProductEditScreen from "./screens/ProductEditScreen.js";
 import TestComponent from './components/Test.js'
-import TestScreen from './components/Test.js'
+// import Header from "./components/Header.js";
 
 const App = () => {
   return (
     <Router>
-      {/* <Header /> */}
       <TestComponent />
+      {/* <Header /> */}
       <TestScreen />
       <main className="py-3">
         <Container>
