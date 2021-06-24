@@ -17,7 +17,6 @@ import OrderListScreen from "./screens/OrderListScreen.js";
 import ProductListScreen from "./screens/ProductListScreen.js";
 import UserEditScreen from "./screens/UserEditScreen.js";
 import ProductEditScreen from "./screens/ProductEditScreen.js";
-// import TestHeader from './components/Header.js'
 import Header from './components/TestHeader.js'
 import Footer from "./components/TestFooter.js";
 
@@ -50,18 +49,3 @@ const App = () => {
 }
 
 export default App;
-
-
-//  import React from 'react'
- 
-//  const App = () => {
-//    return (
-//      <Router>
-//        {/* <h1>Hello World</h1> */}
-//       <Route path="/" component={HomeScreen} exact />
-//      </Router>
-//    )
-//  }
- 
-//  export default App
- 
