@@ -12,6 +12,12 @@ const getProducts = asyncHandler(async (req, res) => {
   res.json(products);
 });
 
+
+const getTopProducts = asyncHandler(async (req, res) => {
+  const products = await Product.find({}).sort({rating: -1}).limit(3);
+  res.json(products);
+});
+
 const getProductById = asyncHandler(async (req, res) => {
   const product = await Product.findById(req.params.id);
   if (product) {
@@ -112,4 +118,5 @@ export {
   createProduct,
   updateProduct,
   createProductReview,
+  getTopProducts
 };

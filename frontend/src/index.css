@@ -39,6 +39,14 @@ h2 {
 }
 
 span #eye {
+  float: right;
+  margin-top: -2.2rem !important;
+  margin-right: 12px;
+  padding: 5px;
+  cursor: pointer;
+  font-size: 1.1rem;
+}
+/* span #eye {
   position: absolute;
   padding: 0.4em 0.9em !important;
   right: 20px;
@@ -47,7 +55,7 @@ span #eye {
   margin-top: 40px;
   font-size: large;
   cursor: pointer !important;
-}
+} */
 
 @media only screen and (max-width: 376px) {
   .fade.alert.alert-success.show {
@@ -63,3 +71,114 @@ span #eye {
     margin-top: 32px;
   }
 }
+
+@media only screen and (min-width: 992px) {
+  #searchbox {
+    margin-left: 2rem !important;
+  }
+  #search-btn {
+    margin: auto;
+    padding-left: 1rem !important;
+    padding-right: 1rem !important;
+    letter-spacing: 1.5px;
+  }
+}
+
+
+@media only screen and (max-width: 576px) {
+  #searchbox {
+    margin: .8rem 0 !important;
+  }
+  #search-btn {
+    margin: auto;
+    padding: .3rem 1rem !important;
+    letter-spacing: 2px;
+  }
+}
+
+
+/* carousel */
+.carousel-item-next,
+.carousel-item-prev,
+.carousel-item.active {
+  display: flex;
+}
+
+.carousel-caption{
+  position: absolute;
+  top: 0;
+}
+
+.carousel-caption h2{
+  color: white;
+  margin: auto;
+}
+
+
+.carousel img {
+  height: 300px;
+  padding: 30px;
+  margin: 50px;
+  border-radius: 50%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.carousel a {
+  margin: 0 auto;
+}
+
+@media (max-width: 1024px) {
+  
+.carousel img {
+  height: 300px;
+  padding: 30px;
+  margin: 40px;
+  border-radius: 50%;
+  margin-left: auto;
+  margin-right: auto;
+}
+  .carousel-caption h2 {
+    font-size: 1rem !important;
+  }
+}
+
+@media (max-width: 768px) {
+  
+  .carousel img {
+    height: 250px;
+    padding: 35px;
+    margin: 40px;
+    border-radius: 50%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+    .carousel-caption h2 {
+      font-size: .8rem !important;
+      padding-top: 0;
+    }
+  }
+
+  @media (max-width: 425px) {
+  
+    .carousel img {
+      height: 210px;
+      padding:35px ;
+      margin: 24px;
+      border-radius: 50%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+      .carousel-caption h2 {
+        font-size: .7rem !important;
+        padding-top: 0;
+      }
+      .carousel{
+        height: 250px;
+      }
+      .carousel-control-next-icon,
+      .carousel-control-prev-icon {
+        width: 1rem;
+        height: 1rem;
+      }
+    }

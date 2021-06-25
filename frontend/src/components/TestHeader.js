@@ -22,8 +22,8 @@ const Header = () => {
         <Container>
           <Navbar.Brand href="/">ProShop</Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
-          <Route render={({ history }) => <SeachBox history={history} />} />
           <Navbar.Collapse id="basic-navbar-nav">
+            <Route render={({ history }) => <SeachBox history={history} />} />
             <Nav className="ml-auto">
               <LinkContainer to="/cart">
                 <Nav.Link>

@@ -34,8 +34,8 @@ const orderConfirm = async(order) => {
             <strong>Qty</strong>: ${item.qty}</p>`
   });
   const msg = {
-    to: "kunalgautam13711@gmail.com",
-    from: "kunalgautam1371@gmail.com",
+    to: `${user.email}`,
+    from: "myproshopapp@gmail.com",
     subject: "Your order is placed successfully",
     text: "and easy to do anywhere, even with Node.js",
     html: body,
@@ -68,8 +68,8 @@ const paymentConfirm = async(updateOrder) => {
               <center> 
               `
   const msg = {
-    to: "kunalgautam13711@gmail.com",
-    from: "kunalgautam1371@gmail.com",
+    to: `${user.email}`,
+    from: "myproshopapp@gmail.com",
     subject: "Your payment is successfull",
     text: "and easy to do anywhere, even with Node.js",
     html: body,
