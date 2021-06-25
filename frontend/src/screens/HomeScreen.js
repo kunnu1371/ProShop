@@ -5,7 +5,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { listProducts } from "../actions/productActions.js";
 import Loader from "../components/Loader.js";
 import Message from "../components/Message.js";
-import ProductCarousal from "../components/ProductCarousal.js";
+import ProductCarousal from "../components/Carousel.js";
 
 const HomeScreen = ({ match }) => {
   const keyword = match.params.keyword;
